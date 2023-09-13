@@ -2,5 +2,29 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
 
+/* utilty */
+
+.container{
+    max-width: 1200px;
+    margin: o auto;
+}
+
+.flex-wrap{
+    flex-wrap: wrap;
+}
+
+.flex{
+    display: flex;
+}
+
+.img-size{
+    width: 100%;
+}
+
+.box-size{
+    width: calc(100% / 3);
+}
