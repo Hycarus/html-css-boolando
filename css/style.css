@@ -17,7 +17,7 @@
 
 /* utilty */
 .debug{
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 .container{
     max-width: 1200px;
@@ -37,12 +37,12 @@
 }
 
 .box-size{
-    /* width: calc(100% / 3); */
     margin: 0 auto;
 }
 
 /* ------------------------- header ------------------- */
-.bg-header{
+
+.nav{
     background-color: var(--color-header);
     height: 70px;
 }
@@ -50,17 +50,17 @@
     align-items: center;
 }
 
-.nav{
+.bg-header{
     position: fixed;
     background-color: var(--color-header);
     width: 100%;
     min-height: 70px;
     z-index: 1000;
-    margin: 0 auto;
 }
-ul li{
+ul li > a{
     padding: 0 10px;
     color: var(--color-text-white);
+    font-size: 1em;
 }
 .utility-bar{
     padding: 0 10px;
@@ -71,17 +71,17 @@ ul li{
 }
 #logo{
     width: 30%;
+    cursor: pointer;
 }
 .container-logo{
     justify-content: center;
     min-width: 300px;
 }
+i{
+    cursor: pointer;
+}
 
 /* ------------------------------ main ----------------------------------- */
-main{
-    margin-top: 100px;
-
-}
 h2{
     width: 100%;
     font-size: 0.9em;
@@ -92,12 +92,11 @@ h2{
     min-width: 370px;
     padding: 10px;
 }
-.img{
-    display: inline-block;
-}
+
 .card-container{
-    padding: 10px;
+    padding: 10px 10px 50px 10px;
     justify-content: center;
+    padding-top: 140px;
 }
 
 .brand{
@@ -143,4 +142,45 @@ h2{
     right: 10px;
     text-align: center;
     line-height: 40px;
+    cursor: pointer;
+}
+.heart:hover{
+    color: var(--color-discount);
+}
+.img-change{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px;
+}
+.card:hover .img-change{
+    display: block;
+}
+img{
+    cursor: pointer;
+}
+/* ------------------------ footer ------------------------- */
+footer{
+    background-color: var(--color-footer);
+    color: var(--color-text-white);
+}
+h1{
+    padding-top: 20px;
+}
+footer li{
+    padding: 20px 15px 40px 0;
+}
+
+.social{
+    padding-top: 20px;
+}
+
+.footer-container{
+    padding: 10px;
+    justify-content: space-between;
+}
+a{
+    color: var(--color-text-white);
+    font-size: 0.5em;
 }
