@@ -4,10 +4,21 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
+    font-size: 1.3rem;
+}
+/* palette colori */
+:root{
+    --color-header: #ff6900;
+    --color-footer: #1a1a1a;
+    --color-discount: #ff0000;
+    --color-green: #008000;
+    --color-text-white: #ffffff;
 }
 
 /* utilty */
-
+.debug{
+    border: 1px solid black;
+}
 .container{
     max-width: 1200px;
     margin: o auto;
@@ -27,4 +38,39 @@
 
 .box-size{
     width: calc(100% / 3);
+    margin: 0 auto;
+}
+
+/* ------------------------- header ------------------- */
+
+.flex-nav{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--color-header);
+    width: 100%;
+    min-height: 70px;
+}
+ul li{
+    padding: 0 10px;
+    color: var(--color-text-white);
+}
+.utility-bar{
+    padding: 0 10px;
+}
+.text-right{
+    justify-content: flex-end;
+    color: var(--color-text-white);
+}
+#logo{
+    width: 30%;
+}
+.container-logo{
+    justify-content: center;
+    min-width: 300px;
 }
