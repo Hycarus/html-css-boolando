@@ -5,6 +5,7 @@
     text-decoration: none;
     list-style: none;
     font-size: 1.3rem;
+    font-family: 'Courier New', Courier, monospace;
 }
 /* palette colori */
 :root{
@@ -90,7 +91,7 @@ h2{
 .card{
     width: calc(100% / 3);
     position: relative;
-    min-width: 370px;
+    min-width: 390px;
     padding: 10px;
 }
 
@@ -137,6 +138,7 @@ h2{
 .heart{
     width: 40px;
     height: 40px;
+    border-radius: 50%;
     background-color: var(--color-text-white);
     position: absolute;
     top: 20px;
