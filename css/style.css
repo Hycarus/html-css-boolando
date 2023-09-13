@@ -54,6 +54,7 @@
 .bg-header{
     position: fixed;
     background-color: var(--color-header);
+    box-shadow: 0 0 5px var(--color-footer);
     width: 100%;
     min-height: 70px;
     z-index: 1000;
