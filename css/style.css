@@ -39,6 +39,10 @@
 
 .box-size{
     margin: 0 auto;
+    width: calc(100% / 3);
+}
+.padding-10p{
+    padding: 0 10px;
 }
 
 /* ------------------------- header ------------------- */
@@ -50,7 +54,9 @@
 .flex-nav{
     align-items: center;
 }
-
+.text-right li{
+    padding: 0 10px;
+}
 .bg-header{
     position: fixed;
     background-color: var(--color-header);
